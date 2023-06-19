@@ -12,9 +12,10 @@ class ButtonPrimary extends StatelessWidget {
       onPressed: onTap,
       style: OutlinedButton.styleFrom(
         shape: const StadiumBorder(),
-        backgroundColor: const Color(0xFFF33830)
+        backgroundColor: const Color(0xFFF33830),
+        padding: const EdgeInsets.symmetric(horizontal: 20,)
       ),
-      child: Text(title, style: const TextStyle(color: Colors.white),)
+      child: Text(title, style: const TextStyle(color: Colors.white, fontSize: 20),)
     );
   }
 }
